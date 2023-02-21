@@ -1,42 +1,111 @@
 /* Custom styles for wufoo forms for rev5.org */
 /* Files hosted on gitpages */
 
-li.name-inline-label input.field{
-  display: inline;
-  margin-right: 20px;
-}
+/* ############################ */
+/*  General Styling */
+/* ############################ */
 
-li.name-inline-label label{
-  float: left;
-  margin-top: 8px;
-  margin-right: 10px;
-}
-
-li.name-no-label span label{
-  display: none;
-}
-
-.wufoo li.focused.no-focus {
-  background-color: inherit !important;
-}
-
+/** Center the submit button */
 .buttons input#saveForm {
   margin: auto;
   display: block;
   float: none;
 }
 
+/* ############################ */
+/*  Class Specific Styling  */
+/* ############################ */
+
+/** name-inline-label: Moves the "First"/"Last" labels and moves them up next to the input */
+li.name-inline-label input.field {
+  display: inline;
+  margin-right: 20px;
+}
+
+li.name-inline-label label {
+  float: left;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+/** no-nested-label:  Hide nexted labels */
+li.no-nested-label span label {
+  display: none;
+}
+
+/** no-focus: Remove the yellow background when fields are focused */
+.wufoo li.focused.no-focus {
+  background-color: inherit !important;
+}
+
+/** squish-bottom: Remove 2/3 of the padding from the bottom of the field */
 form.wufoo li.squish-bottom {
   padding-bottom: 5px !important;
 }
+
+/** squish-top: Remove 2/3 of the padding from the top of the field */
 form.wufoo li.squish-top {
   padding-top: 5px !important;
 }
 
+/** small-box: Reduces height of textarea to ~1 line */
 li.small-box textarea {
   height: 40px;
 }
 
+/** no-label: hides field label */
 li.no-label label {
   display: none;
+}
+
+/** custom-amount: adds a slew of styling to allow an amount field to not look terrible...
+ * Generally makes it appear less field-like and more inline-editable. */
+form.wufoo .custom-amount input {
+  background-color: inherit;
+  border: 0px;
+  border-bottom: 1px solid #CCC;
+  padding: 5px;
+  text-align: left;
+  max-width: 200px;
+}
+
+/* Tell inputs and symbols to change font size gently */
+form.wufoo .custom-amount input, form.wufoo .custom-amount span.symbol {
+  transition: font-size ease-in-out 300ms;
+  -moz-transition: font-size ease-in-out 300ms; /* Firefox 4 */
+  -webkit-transition: font-size ease-in-out 300ms; /* Safari and Chrome */
+  -o-transition: font-size ease-in-out 300ms;
+}
+
+/* Set the font size for inputs on hover */ 
+form.wufoo .custom-amount:hover input {
+  font-size: 20px !important;
+  
+}
+
+/* Set font size for symbols on hover */
+form.wufoo .custom-amount:hover span.symbol {
+  font-size: 22px !important;
+}
+
+/* Increase the font size of the whole field when either of the amount fields are focused. */
+form.wufoo .custom-amount.focused input{
+  font-size: 30px !important;
+}
+
+/* Set font size and darken color for symbols on focus */
+form.wufoo .custom-amount.focused span.symbol {
+  font-size: 24px !important;
+  color: #555
+}
+
+/* Remove the default border when focused and darken the bottom border */
+form.wufoo .custom-amount input:focus {
+  border: 0px;
+  border-bottom: 1px solid #888;
+}
+
+/* Change the default padding of the amount symbols when squish-top is active. */
+form.wufoo li.custom-amount.squish-top:not(.focused) span.symbol {
+  padding-top: 3px;
 }
