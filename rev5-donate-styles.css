@@ -5,10 +5,8 @@
 /*  General Styling */
 /* ############################ */
 
-/** Center the submit button */
+/** Move the submit button to the left side*/
 .buttons input#saveForm {
-  margin: auto;
-  display: block;
   float: none;
 }
 
@@ -60,12 +58,6 @@ li.no-label label {
 
 /** custom-amount: adds a slew of styling to allow an amount field to not look terrible...
  * Generally makes it appear less field-like and more inline-editable. */
-form.wufoo .custom-amount {
-  width: 300px !important;
-  margin: auto;
-  display: block;
-}
-
 form.wufoo .custom-amount input {
   background-color: inherit;
   border: 0px;
