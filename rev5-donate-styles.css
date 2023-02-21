@@ -60,6 +60,12 @@ li.no-label label {
 
 /** custom-amount: adds a slew of styling to allow an amount field to not look terrible...
  * Generally makes it appear less field-like and more inline-editable. */
+form.wufoo .custom-amount {
+  width: 300px !important;
+  margin: auto;
+  display: block;
+}
+
 form.wufoo .custom-amount input {
   background-color: inherit;
   border: 0px;
@@ -80,6 +86,10 @@ form.wufoo .custom-amount input, form.wufoo .custom-amount span.symbol {
 /* Set the font size for inputs on hover */ 
 form.wufoo .custom-amount:hover input {
   font-size: 20px !important;
+}
+
+/* Increase width of the dollar field on hover. */
+form.wufoo .custom-amount:hover input.currency {
   width: 65px; 
 }
 
@@ -89,8 +99,13 @@ form.wufoo .custom-amount:hover span.symbol {
 }
 
 /* Increase the font size of the whole field when either of the amount fields are focused. */
-form.wufoo .custom-amount.focused input{
+form.wufoo .custom-amount.focused input {
   font-size: 30px !important;
+  width: 95px;
+}
+
+/* Increase width of the dollar field on focus. */ 
+form.wufoo .custom-amount.focused input.currency {
   width: 95px;
 }
 
