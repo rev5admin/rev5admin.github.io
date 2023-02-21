@@ -26,8 +26,11 @@ li.name-no-label span label{
   float: none;
 }
 
-li.squish-bottom label {
-  padding-bottom: 5px;
+.wufoo li.squish-bottom {
+  padding-bottom: 5px !important;
+}
+.wufoo li.squish-top {
+  padding-top: 5px !important;
 }
 
 li.small-box textarea {
