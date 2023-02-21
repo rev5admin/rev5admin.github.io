@@ -37,7 +37,7 @@ li.no-nested-label span label {
 }
 
 /** squish-bottom: Remove 2/3 of the padding from the bottom of the field */
-form.wufoo li.squish-bottom {
+form.wufoo li.squish-bottom, form.wufoo li.squish-bottom .subfield label {
   padding-bottom: 5px !important;
 }
 
