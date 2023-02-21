@@ -1,3 +1,39 @@
-.test-style span{
-  color: blue;
+/* Custom styles for wufoo forms for rev5.org */
+/* Files hosted on gitpages */
+
+li.name-inline-label input.field{
+  display: inline;
+  margin-right: 20px;
+}
+
+li.name-inline-label label{
+  float: left;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+li.name-no-label span label{
+  display: none;
+}
+
+.wufoo li.focused.no-focus {
+  background-color: inherit !important;
+}
+
+.buttons input#saveForm {
+  margin: auto;
+  display: block;
+  float: none;
+}
+
+li.squish-bottom label {
+  padding-bottom: 5px;
+}
+
+li.small-box textarea {
+  height: 40px;
+}
+
+li.no-label label {
+  display: none;
 }
