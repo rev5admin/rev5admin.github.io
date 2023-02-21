@@ -71,16 +71,16 @@ form.wufoo .custom-amount input {
 
 /* Tell inputs and symbols to change font size gently */
 form.wufoo .custom-amount input, form.wufoo .custom-amount span.symbol {
-  transition: font-size ease-in-out 300ms;
-  -moz-transition: font-size ease-in-out 300ms; /* Firefox 4 */
-  -webkit-transition: font-size ease-in-out 300ms; /* Safari and Chrome */
-  -o-transition: font-size ease-in-out 300ms;
+  transition: font-size 300ms, width  300ms;
+  -moz-transition: font-size 300ms, width  300ms; /* Firefox 4 */
+  -webkit-transition: font-size  300ms, width  300ms; /* Safari and Chrome */
+  -o-transition: font-size 300ms, width  300ms;
 }
 
 /* Set the font size for inputs on hover */ 
 form.wufoo .custom-amount:hover input {
   font-size: 20px !important;
-  
+  width: 65px; 
 }
 
 /* Set font size for symbols on hover */
