@@ -1,0 +1,58 @@
+/* Custom styles for wufoo forms for rev5.org */
+/* Files hosted on gitpages */
+
+/* ############################ */
+/*  General Styling */
+/* ############################ */
+
+/** Move the submit button to the left side*/
+/*.buttons input#saveForm {
+  float: none;
+}*/
+
+/* ############################ */
+/*  Class Specific Styling  */
+/* ############################ */
+
+/** name-inline-label: Moves the "First"/"Last" labels and moves them up next to the input */
+li.name-inline-label input.field {
+  display: inline;
+  margin-right: 20px;
+}
+
+li.name-inline-label label {
+  float: left;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+/** no-nested-label:  Hide nexted labels */
+li.no-nested-label span label {
+  display: none;
+}
+
+/** no-focus: Remove the yellow background when fields are focused */
+.wufoo li.focused.no-focus {
+  background-color: inherit !important;
+}
+
+/** squish-bottom: Remove 2/3 of the padding from the bottom of the field */
+form.wufoo li.squish-bottom, form.wufoo li.squish-bottom .subfield label {
+  padding-bottom: 5px !important;
+}
+
+/** squish-top: Remove 2/3 of the padding from the top of the field */
+form.wufoo li.squish-top {
+  padding-top: 5px !important;
+}
+
+/** small-box: Reduces height of textarea to ~1 line */
+li.small-box textarea {
+  height: 40px;
+}
+
+/** no-label: hides field label */
+li.no-label label {
+  display: none;
+}
+
