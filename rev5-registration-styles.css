@@ -7,8 +7,16 @@
 
 /** Move the submit button to the left side*/
 .redesigned-theme-2018 h1#logo a {
-  background-position: center;
+  background-position: center !important;
 }
+.redesigned-theme-2018 .wufoo header h2#header {
+  margin: 0px;
+  text-align: center;
+}
+.redesigned-theme-2018 .wufoo header div {
+  padding: 0px;
+}
+
 
 /* ############################ */
 /*  Class Specific Styling  */
