@@ -26,6 +26,14 @@
 /*  Class Specific Styling  */
 /* ############################ */
 
+.redesigned-theme-2018 .wufoo .low-margin.section h3 {
+  margin-top: 0px;
+}
+
+.redesigned-theme-2018 .wufoo .low-margin.section div{
+  margin-bottom: 5px;
+}
+
 /** name-inline-label: Moves the "First"/"Last" labels and moves them up next to the input */
 li.name-inline-label input.field {
   display: inline;
