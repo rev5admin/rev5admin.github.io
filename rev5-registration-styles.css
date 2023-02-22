@@ -5,15 +5,19 @@
 /*  General Styling */
 /* ############################ */
 
-/** Move the submit button to the left side*/
+/** Center the background image in the header. */
 .redesigned-theme-2018 h1#logo a {
   background-position: center !important;
 }
-.redesigned-theme-2018 .wufoo header h2#header {
+
+/* Remove the margin and center the title */
+.redesigned-theme-2018 .wufoo header#header h2 {
   margin: 0px;
   text-align: center;
 }
-.redesigned-theme-2018 .wufoo header div {
+
+/* Remove the padding from the description */
+.redesigned-theme-2018 .wufoo header#header div {
   padding: 0px;
 }
 
