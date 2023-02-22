@@ -26,6 +26,7 @@
 /*  Class Specific Styling  */
 /* ############################ */
 
+/** low-margin: reduce the default margins around a section block. */
 .redesigned-theme-2018 .wufoo .low-margin.section h3 {
   margin-top: 0px;
 }
