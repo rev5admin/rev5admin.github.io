@@ -6,9 +6,9 @@
 /* ############################ */
 
 /** Move the submit button to the left side*/
-/*.buttons input#saveForm {
-  float: none;
-}*/
+#logo a {
+  background-position: center;
+}
 
 /* ############################ */
 /*  Class Specific Styling  */
