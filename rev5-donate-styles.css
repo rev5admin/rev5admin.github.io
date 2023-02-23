@@ -10,6 +10,11 @@
   float: none;
 }
 
+/** Restrict the height of the dropdown menu from the select list. */
+.wufoo .wufoo-dropdown .wufoo-dropdown-menu {
+  max-height: 145px;
+}
+
 /* ############################ */
 /*  Class Specific Styling  */
 /* ############################ */
