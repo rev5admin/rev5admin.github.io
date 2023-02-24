@@ -26,6 +26,11 @@
 /*  Class Specific Styling  */
 /* ############################ */
 
+/** underline-field: Add an underline to the field */ 
+.underline-field {
+  border-bottom: 2px solid #264c51;
+}
+
 /** low-margin: reduce the default margins around a section block. */
 .redesigned-theme-2018 .wufoo .low-margin.section h3 {
   margin-top: 0px;
