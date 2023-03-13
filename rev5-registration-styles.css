@@ -8,6 +8,7 @@
 /** Center the background image in the header. */
 .redesigned-theme-2018 h1#logo a {
   background-position: center !important;
+  background-size: contain !important;
 }
 
 /* Remove the margin and center the title */
@@ -81,4 +82,3 @@ li.small-box textarea {
 li.no-label label {
   display: none;
 }
-
