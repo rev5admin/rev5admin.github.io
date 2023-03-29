@@ -88,6 +88,6 @@ li.no-input input {
   display: none;
 }
 
-li.gray-field input {
+.redesigned-theme-2018 .wufoo li.gray-field input {
   background-color: lightgray;
 }
